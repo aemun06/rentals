@@ -12,7 +12,10 @@
   "color",
   "column_break_wjdz",
   "model",
-  "license_plate"
+  "license_plate",
+  "is_published",
+  "route",
+  "vehicle_image"
  ],
  "fields": [
   {
@@ -58,11 +61,28 @@
    "fieldtype": "Data",
    "label": "Title",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published?"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "vehicle_image",
+   "fieldtype": "Attach Image",
+   "label": "Vehicle Image"
   }
  ],
- "index_web_pages_for_search": 1,
+ "has_web_view": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2024-07-20 20:34:12.883967",
+ "modified": "2024-07-26 23:18:28.315887",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -82,6 +102,7 @@
    "write": 1
   }
  ],
+ "route": "cars",
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
